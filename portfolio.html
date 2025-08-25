@@ -1,0 +1,128 @@
+<!--
+Rohan's Responsive Portfolio (HTML + CSS)
+- Single HTML file with embedded CSS
+- Fully responsive
+- Replace placeholder content (name, bio, projects, links, images)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohan VS - Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f9fafb; color: #1e293b; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    header { max-width: 1200px; margin: auto; padding: 1rem; display: flex; justify-content: space-between; align-items: center; }
+    nav a { margin-left: 1rem; color: #334155; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 1200px; margin: auto; padding: 1rem; }
+    .hero { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center; }
+    .hero h1 { font-size: 2rem; font-weight: bold; }
+    .hero p { margin-top: 1rem; color: #475569; }
+    .btn { display: inline-block; padding: 0.5rem 1rem; border-radius: 8px; }
+    .btn-primary { background: #0f172a; color: #fff; }
+    .btn-outline { border: 1px solid #cbd5e1; color: #1e293b; }
+    .section { margin-top: 3rem; background: #fff; padding: 1.5rem; border-radius: 12px; }
+    .projects { display: grid; gap: 1rem; }
+    .project { border: 1px solid #e2e8f0; border-radius: 12px; padding: 1rem; background: #fff; }
+    .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .skill { background: #f1f5f9; border: 1px solid #e2e8f0; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; }
+    form input, form textarea { width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 1px solid #cbd5e1; border-radius: 6px; }
+    form button { margin-top: 1rem; background: #0f172a; color: #fff; padding: 0.5rem 1rem; border: none; border-radius: 8px; }
+    footer { margin-top: 3rem; text-align: center; font-size: 0.8rem; color: #64748b; }
+    @media (min-width: 768px) {
+      .hero { grid-template-columns: repeat(2, 1fr); }
+      .projects { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div><strong>Rohan VS</strong></div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <h1>Hi, I’m Rohan — a Full-Stack Developer</h1>
+      <p>I build user-facing experiences and back-end systems. I love making simple, reliable software that scales.</p>
+      <div style="margin-top:1rem;">
+        <a href="#projects" class="btn btn-primary">See projects</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
+    </div>
+    <div style="background:#e0e7ff; border-radius:12px; padding:2rem; text-align:center;">
+      <div style="font-weight:bold;">Rohan VS</div>
+      <div style="color:#475569;">Full-Stack Developer • Data Analyst</div>
+      <div style="font-size:0.8rem; color:#94a3b8;">Replace with a portrait</div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About me</h2>
+    <p style="margin-top:1rem;">I’m a final-year engineering student (2021-2025) with experience in full-stack web development and data analysis. I’ve built projects in Java, React, Node, and Python. I also work part-time in digital marketing and run a motorbike workshop called Wolt69.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Selected projects</h2>
+    <div class="projects" style="margin-top:1rem;">
+      <div class="project">
+        <h3>Expense Tracker</h3>
+        <p>Full-stack expense tracker with authentication, charts and export.</p>
+      </div>
+      <div class="project">
+        <h3>Blind People Navigation System</h3>
+        <p>Assistive device combining navigation and text-reading using Raspberry Pi.</p>
+      </div>
+      <div class="project">
+        <h3>Responsive Age Calculator</h3>
+        <p>Single-file HTML/CSS project that calculates exact age responsively.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills" style="margin-top:1rem;">
+      <div class="skill">Java</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">SQL</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Tailwind</div>
+      <div class="skill">Data Analysis</div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Let’s connect</h2>
+    <form>
+      <label>Name</label>
+      <input type="text" placeholder="Your name" />
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com" />
+      <label>Message</label>
+      <textarea placeholder="Say hi..."></textarea>
+      <button type="submit">Send message</button>
+    </form>
+  </section>
+
+  <footer>
+    Made with ❤ by Rohan VS — © <script>document.write(new Date().getFullYear());</script>
+  </footer>
+</main>
+
+</body>
+</html>
